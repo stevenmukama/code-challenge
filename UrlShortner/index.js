@@ -1,7 +1,7 @@
 const urls = [];
 
 const shortenUrl = (url) => {
-  const shortUrl = `https://short.micro/${Math.random()
+  const shortUrl = `https://short.microsoft/${Math.random()
     .toString(36)
     .substring(2, 7)}`;
   urls.push({ originalUrl: url, shortUrl });
@@ -24,6 +24,6 @@ const visitUrl = (shortUrl) => {
   return url.originalUrl;
 };
 console.log(
-  "This is what you'll get when you enter short url",
+  "This is what you get when you enter short url",
   visitUrl(urls[urls.length - 1].shortUrl)
 );
